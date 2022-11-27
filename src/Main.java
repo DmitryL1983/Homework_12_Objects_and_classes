@@ -25,5 +25,19 @@ public class Main {
         javaLight.setYear(2021);
         System.out.println(javaLight.getName()+" "+javaLight.getYear()+ " " +javaLight.getAuthor());
 
+        System.out.println();
+        System.out.println("Сравнение объектов первой и последней книг");
+        herbertSchildt.equals(PaulDaugherty);
+        if (herbertSchildt.equals(PaulDaugherty)) {
+            System.out.println("Авторы книг одинаковые");
+        } else {
+            System.out.println("Авторы книг разные");
+        }
+        javaLight.equals(humanMachine);
+        if (javaLight.equals(humanMachine)) {
+            System.out.println("Книги одинаковые");
+        } else {
+            System.out.println("Книги разные");
+        }
     }
 }
