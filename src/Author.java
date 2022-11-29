@@ -22,12 +22,12 @@ public class Author {
         return java.util.Objects.hash(authorName.length() + authorLastName.length());
     }
 
-
-    public boolean equals(Author other) {
+    @Override
+    public boolean equals(Object other) {
         if (this.hashCode() != other.hashCode()) {
             return false;
         } else {
-            return (this.authorName == other.authorName && this.authorLastName == other.authorLastName);
+            return (this.authorName == authorName && this.authorLastName == authorLastName);
         }
     }
 }

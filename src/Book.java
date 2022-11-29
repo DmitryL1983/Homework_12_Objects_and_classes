@@ -29,11 +29,12 @@ public class Book {
     public int hashCode() {
         return java.util.Objects.hash(name.length() + author.toString().length() + year);
     }
-    public boolean equals(Book other) {
+    @Override
+    public boolean equals(Object other) {
         if (this.hashCode() != other.hashCode()) {
             return false;
         } else {
-            return this.name == other.name && this.author.equals(other.author) && this.year == other.year;
+            return this.name == name && this.author.equals(author) && this.year == year;
         }
     }
 
