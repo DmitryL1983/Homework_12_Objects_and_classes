@@ -31,6 +31,8 @@ public class Book {
     }
     @Override
     public boolean equals(Object other) {
+        if (this == other) return true;
+        if (other == null || getClass() != other.getClass()) return false;
         if (this.hashCode() != other.hashCode()) {
             return false;
         } else {
